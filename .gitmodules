@@ -1,3 +1,0 @@
-[submodule "zmk-config"]
-	path = zmk-config
-	url = https://github.com/JeffDess/zmk-config
