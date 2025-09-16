@@ -12,23 +12,23 @@
 
 / {
         behaviors {
-                td_esc: tap_dance_mod_tap {
+                td0: tap_dance_0{
+                    compatible = "zmk,behavior-tap-dance";
+                    #binding-cells = <0>;
+                    tapping-term-ms = <200>;
+                    bindings = <&mo 2>, <&lt 1>;
+                };
+                td_esc: tap_dance_1 {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&kp Q>, <&kp ESC>;
                 };
-                td_tab: tap_dance_mod_tap {
+                td_tab: tap_dance_2 {
                     compatible = "zmk,behavior-tap-dance";
                     #binding-cells = <0>;
                     tapping-term-ms = <200>;
                     bindings = <&kp A>, <&kp TAB>;
-                };
-                td0: tap_dance_mod_tap {
-                    compatible = "zmk,behavior-tap-dance";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <200>;
-                    bindings = <&mo 2>, <&lt 1>;
                 };
         };
 
